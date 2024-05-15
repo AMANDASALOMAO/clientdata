@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .select:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+  }
+  

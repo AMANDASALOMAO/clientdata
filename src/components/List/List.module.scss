@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 3rem 0;
+  }
+  
+  .item {
+    width: calc(33.33% - 2rem);
+}
+  

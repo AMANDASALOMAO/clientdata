@@ -1,0 +1,1 @@
+{"version":3,"file":"elastic.js","sourceRoot":"","sources":["../../../src/config/elastic.ts"],"names":[],"mappings":";;AAAA,iDAAuC;AAEvC,MAAM,SAAS,GAAG;IACd,QAAQ,EAAE,OAAO;IACjB,kBAAkB,EAAE,KAAK;CAC1B,CAAC;AAEJ,MAAM,aAAa,GAAG,IAAI,sBAAM,CAAC;IAC7B,IAAI,EAAE,qDAAqD;IAC3D,GAAG,EAAE,SAAS;CACjB,CAAC,CAAC;AAEH,kBAAe,aAAa,CAAC"}
