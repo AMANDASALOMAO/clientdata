@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import styles from './Modal.module.scss'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 interface ModalProps {
   isOpen: boolean
   onClose: () => void
@@ -66,6 +69,10 @@ const Modal: React.FC<ModalProps> = ({
             : value
         })
       )
+      toast.success('Usuário editado com sucesso!')
+    })
+    .catch((error) => {
+      toast.error('Erro ao editar usuário.')
     })
     handleClose()
   }
@@ -77,6 +84,10 @@ const Modal: React.FC<ModalProps> = ({
           return value.id !== editValues.id
         })
       )
+      toast.success('Usuário deletado com sucesso!')
+    })
+    .catch((error) => {
+      toast.error('Erro ao deletar usuário.')
     })
     handleClose()
   }
@@ -170,6 +181,7 @@ const Modal: React.FC<ModalProps> = ({
         <button onClick={handleDelete}> Excluir </button>
         <button onClick={handleEdit}> Salvar </button>
         </div>
+              <ToastContainer />
       </div>
     </div>
   )

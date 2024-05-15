@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styles from './RouterForm.module.scss'
 import Axios from 'axios'
 import Select from '../Select/Select'
+import 'react-toastify/dist/ReactToastify.css'
+import { toast, ToastContainer } from 'react-toastify'
 
 interface RouterDataProps {
     clients: { value: string; label: string }[]
@@ -15,7 +17,7 @@ const RouterData = ({ clients }: RouterDataProps) => {
         console.log(values)
         Axios.post("http://localhost:3001/registerRouter", { ...values })
         .then((response) => {
-          console.log(response)
+          toast.success('Roteador registrado com sucesso!')
           Axios.post("http://localhost:3001/searchRouter", { ...values })
             .then((searchResponse) => {
               if (searchResponse.data && searchResponse.data.length > 0 && searchResponse.data[0].id) {
@@ -35,10 +37,12 @@ const RouterData = ({ clients }: RouterDataProps) => {
               window.location.reload()
             })
             .catch((error) => {
-              console.error("Erro ao buscar roteador:", error)
+              toast.error('Erro ao buscar roteador.')
+              console.error(error)
             })
         })
         .catch((error) => {
+          toast.error('Erro ao registrar roteador.')
           console.error("Erro ao registrar roteador:", error)
         })
       }
@@ -108,6 +112,7 @@ const RouterData = ({ clients }: RouterDataProps) => {
 
                 <button onClick={handleClick}>Cadastrar</button>
             </div>
+            <ToastContainer />
         </div>
     )
 }
