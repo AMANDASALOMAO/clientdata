@@ -102,7 +102,7 @@ const RouterData = ({ clients }: RouterDataProps) => {
                 />
                 <Select
                 name='contractrouter'
-                label='Cliente'
+                label='Status do contrato'
                 options={[
                   { value: 'ativo', label: 'Ativo' },
                   { value: 'inativo', label: 'Inativo' }
