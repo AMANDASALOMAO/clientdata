@@ -93,7 +93,7 @@ const Form = () => {
       />
        <input
         name='contract'
-        placeholder='contrato'
+        placeholder='Status do contrato'
         onChange={handleChange}
         type='text'
       />
