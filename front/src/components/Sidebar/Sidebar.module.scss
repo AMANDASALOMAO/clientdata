@@ -29,10 +29,10 @@
   left: 0;
   width: 250px;
   height: 100%;
-  background-color: #A3002E; /* Cor de fundo mais escura para a sidebar */
+  background-color: #A3002E;
   transition: transform 0.3s ease-in-out;
   z-index: 999;
-  box-shadow: 0 0 0 0.2rem rgba(240, 0, 66, 0.25); /* Usando o tom #F00042 para o box-shadow */
+  box-shadow: 0 0 0 0.2rem rgba(240, 0, 66, 0.25);
 
   &.sidebarOpen {
     transform: translateX(0);
