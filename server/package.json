@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "dev": "nodemon dist/index.js",
-    "start": "node dist/index.js"
+    "start": "ts-node src/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@elastic/elasticsearch": "^8.13.1",
     "@mysql/xdevapi": "^8.0.35",
@@ -18,15 +16,19 @@
     "axios": "^1.6.8",
     "cors": "^2.8.5",
     "elasticsearch": "^16.7.3",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.0",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/elasticsearch": "^5.0.43",
+    "@types/express": "^5.0.0",
     "@types/mysql": "^2.15.26",
+    "@types/node": "^22.13.1",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2"
   },
@@ -36,5 +38,11 @@
     "testMatch": [
       "**/test/**/*.test.ts"
     ]
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "description": ""
 }
