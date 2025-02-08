@@ -1,3 +1,6 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "dataworkspace.excludedProjects": [
+        "dbclients/dbclients.sqlproj"
+    ]
 }

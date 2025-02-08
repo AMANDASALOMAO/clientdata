@@ -64,6 +64,7 @@ const RouterData = ({ clients }: RouterDataProps) => {
         <div className={styles.container}>
             <div className={styles.form}>
                 <h1>Insira os dados do roteador</h1>
+                <div className={styles.row}>
                 <input
                     name='routerid'
                     placeholder='ID'
@@ -75,12 +76,12 @@ const RouterData = ({ clients }: RouterDataProps) => {
                     placeholder='Endereço IP'
                     type='number'
                     onChange={handleChange}
-                />
-                <input
-                    name='ipv6'
-                    placeholder='Endereço IPV6'
-                    type='text'
-                    onChange={handleChange}
+                /></div>
+                <Select
+                    name='client'
+                    label='Cliente'
+                    options={clients}
+                    onChange={(value) => handleSelectChange('client', value)}
                 />
                 <input
                     name='model'
@@ -88,18 +89,19 @@ const RouterData = ({ clients }: RouterDataProps) => {
                     type='text'
                     onChange={handleChange}
                 />
+               <div className={styles.row}>
                 <input
                     name='brand'
                     placeholder='Marca'
                     type='text'
                     onChange={handleChange}
                 />
-                 <Select
-                    name='client'
-                    label='Cliente'
-                    options={clients}
-                    onChange={(value) => handleSelectChange('client', value)}
-                />
+                <input
+                    name='ipv6'
+                    placeholder='Endereço IPV6'
+                    type='text'
+                    onChange={handleChange}
+                /></div>
                 <Select
                 name='contractrouter'
                 label='Status do contrato'

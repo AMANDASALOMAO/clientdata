@@ -50,59 +50,70 @@ const Form = () => {
   return (
     <div className={styles.container}>
       <div className={styles.form}>
-            <h1>Insira os dados do cliente</h1>
-      <input
-        name='id'
-        placeholder='ID'
-        type='number'
-        onChange={handleChange}
-      />
-      <input
-        name='user'
-        placeholder='Nome'
-        type='text'
-        onChange={handleChange}
-      />
-      <input
-        name='email'
-        placeholder='E-mail'
-        type='text'
-        onChange={handleChange}
-      />
-      <input
-        name='address'
-        placeholder='Endereço'
-        type='text'
-        onChange={handleChange}
-      />
-      <label>Data de nascimento
-      <input
-        name='birth'
-        placeholder='Data de nascimento'
-        onChange={handleChange}
-        type='date'
-      /></label>
-      <input
-        name='document'
-        placeholder='CPF ou CNPJ'
-        onChange={handleChange}
-        type='number'
-      />
-      <label>Data de cadastro
-      <input
-        name='date'
-        placeholder='Data de cadastro'
-        onChange={handleChange}
-        type='date'
-      /></label>
-       <input
-        name='contract'
-        placeholder='Status do contrato'
-        onChange={handleChange}
-        type='text'
-      />
-      
-      <button onClick={handleClick}>Cadastrar</button>
+        <h1>Insira os dados do cliente</h1>
+        <div className={styles.row}>
+          <input
+            name='id'
+            placeholder='ID'
+            type='number'
+            onChange={handleChange}
+          />
+          <input
+            name='user'
+            placeholder='Nome'
+            type='text'
+            onChange={handleChange}
+          />
+        </div>
+
+        <input
+          name='email'
+          placeholder='E-mail'
+          type='text'
+          onChange={handleChange}
+        />
+        <input
+          name='address'
+          placeholder='Endereço'
+          type='text'
+          onChange={handleChange}
+        />
+
+        <div className={styles.row}>
+          <label>Data de nascimento
+            <input
+              name='birth'
+              placeholder='Data de nascimento'
+              onChange={handleChange}
+              type='date'
+            />
+          </label>
+          <label>Data de cadastro
+            <input
+              name='date'
+              placeholder='Data de cadastro'
+              onChange={handleChange}
+              type='date'
+            />
+          </label>
+        </div>
+
+        <div className={styles.row}>
+          <input
+            name='document'
+            placeholder='CPF ou CNPJ'
+            onChange={handleChange}
+            type='number'
+          />
+          <input
+            name='contract'
+            placeholder='Status do contrato'
+            onChange={handleChange}
+            type='text'
+          />
+        </div>
+
+        <button onClick={handleClick}>Cadastrar</button>
       </div>
     </div>
   )
