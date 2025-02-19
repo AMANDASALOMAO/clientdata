@@ -30,9 +30,9 @@
       transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
       font-weight: 700;
       text-transform: uppercase;
-
+      
       &:hover {
-          background-color: #820025;
-      }
+        background-color: rgba(240, 0, 66, 0.04);
+    }
   }
 }

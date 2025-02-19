@@ -29,7 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<List />} />
             <Route path="/routerList" element={<RouterList />} />
-            <Route path="/getData" element={<Form />} />
+            <Route path="getUsers" element={<Form />} />
             <Route
               path="/routerData" 
               element={<RouterForm clients={list.map((val) => ({ value: val.user, label: val.user }))} />}

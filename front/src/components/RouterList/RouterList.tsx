@@ -8,11 +8,11 @@ function RouterList() {
 
   
   useEffect(() => {
-    axios.get("http://localhost:5000/getRouter").then((response: AxiosResponse<any>) => {
+    axios.get("http://localhost:5000/getRouters").then((response: AxiosResponse<any>) => {
       setRouter(response.data);
       console.log(router);
     });
-  }, []);
+  }, [router]);
 
   return (
     <div className={styles.container}>

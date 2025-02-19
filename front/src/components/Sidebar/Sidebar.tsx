@@ -29,7 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             </Link>
           </li>
           <li>
-            <Link to="/getData" onClick={onClose}>
+            <Link to="getUsers" onClick={onClose}>
               Cadastrar cliente
             </Link>
           </li>

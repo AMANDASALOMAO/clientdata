@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction } from 'react'
 import styles from './RouterItem.module.scss'
-import RouterModal from '../../RouterModal/RouterModal'
+import RouterModal from '../../Modal/RouterModal'
 
 interface RouterItemProps {
     RouterItem?: string[]

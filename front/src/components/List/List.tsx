@@ -8,7 +8,7 @@ function List() {
 
   
   useEffect(() => {
-    axios.get("http://localhost:5000/getData").then((response: AxiosResponse<any>) => {
+    axios.get("http://localhost:5000/getUsers").then((response: AxiosResponse<any>) => {
       setList(response.data);
       console.log(list);
     });
